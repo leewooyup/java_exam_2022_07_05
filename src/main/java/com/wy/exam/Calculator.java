@@ -17,9 +17,9 @@ public class Calculator {
     }
 
     private static int runMinus(String s) {
-        if(s.equals("1 - 2")) {
-            return -1;
-        }
-        return -10;
+        String[] sBits = s.split(" \\- ");
+        int no1 = Integer.parseInt(sBits[0]);
+        int no2 = Integer.parseInt(sBits[1]);
+        return no1 - no2;
     }
 }
